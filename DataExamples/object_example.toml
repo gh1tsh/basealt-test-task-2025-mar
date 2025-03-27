@@ -1,0 +1,28 @@
+[properties]
+id = "некоторый идентификатор объекта"
+type = "название типа"
+
+[properties.name]
+default = "Некоторое имя объекта"
+ru = "ru: Некоторое имя объекта"
+en = "en: Some name of an object"
+
+[[parameters]]
+id = "некоторый идентификатор параметра #1"
+# Тип параметра может быть "целое число" (integer) или строка (string)
+type = "integer"
+# Признак обязательности параметра. Значение типа Boolean.
+required = false
+default_value = 42
+possible_values = [1, 2, 3, 4, 5, 42]
+value = 3
+
+[[parameters]]
+id = "некоторый идентификатор параметра #2"
+type = "string"
+required = false
+default_value = "Windows"
+possible_values = ["Windows", "Linux", "MacOS"]
+value = "Linux"
+
+# Параметров у объекта может быть произвольное количество, но не менее одного.

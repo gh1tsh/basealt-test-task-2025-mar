@@ -1,0 +1,21 @@
+[properties]
+id = "123"
+type = "example"
+
+[properties.name]
+default = "some_name"
+
+[[parameters]]
+id = "param1"
+# Отсутствуют обязательные поля type и required
+default_value = 10
+possible_values = [1, 2, 3, 4, 5]
+value = 3
+
+[[parameters]]
+id = "param2"
+type = "string"
+required = true
+# Отсутствует обязательное поле default_value
+possible_values = ["Windows", "Linux", "MacOS"]
+value = "Linux"
